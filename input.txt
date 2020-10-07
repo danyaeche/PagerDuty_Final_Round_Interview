@@ -1,0 +1,6 @@
+ADD pizza
+ADD Salsa
+ADD Fudge
+ADD Cream
+DELETE Salsa 
+VIEW
