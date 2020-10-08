@@ -1,6 +1,6 @@
 ADD pizza
-ADD Salsa
-ADD Fudge
-ADD Cream
-DELETE Salsa
+add BrEad
+ADD BREAD
+VIEW
+delete pizza
 VIEW

@@ -6,12 +6,11 @@ def main():
     input_file = open('input.txt', 'r')
     for line in input_file:
       line_list = line.split(" ")
-      print(line_list)
-      if len(line_list) == 2 and line_list[0] == 'ADD':
+      if len(line_list) == 2 and line_list[0].upper() == 'ADD':
         dish_dasher_instance.add_dish(line_list[1][:-1])
-      elif len(line_list) == 2 and line_list[0] == 'DELETE':
+      elif len(line_list) == 2 and line_list[0].upper() == 'DELETE':
         dish_dasher_instance.delete_dish(line_list[1][:-1])
-      elif len(line_list) == 1 and line_list[0] == 'VIEW':
+      elif len(line_list) == 1 and line_list[0].upper() == 'VIEW':
         dish_dasher_instance.view_dishes()
       else:
         continue

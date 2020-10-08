@@ -34,6 +34,9 @@ class dish_dasher(object):
   
   def view_dishes(self):
     print("Viewing Dish Dash catalog 👍")
-    for key, values in self.dish_repository.items():
-      if values == True:
-        print(key)
+    if len(self.dish_repository) == 0:
+      print("There's nothing in the list 😜")
+    else:
+      for key, values in self.dish_repository.items():
+        if values == True:
+          print(key)
